@@ -4,9 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Exception exception = new Exception();
+            Exception exception = new Exception("Мое исключение");
 
             exception.Data.Add("Дата создания исключения", DateTime.Now);
+
+            exception.HelpLink = "www.ya.ru";
 
             Console.ReadKey();
         }
