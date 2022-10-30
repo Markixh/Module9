@@ -8,9 +8,10 @@
         {
             Func func = Sub;
             func += Sum;
+            func(5, 10);            
 
+            func -= Sum;
             func(5, 10);
-            Console.ReadLine();
         }
 
         static void Sub(int a, int b)
