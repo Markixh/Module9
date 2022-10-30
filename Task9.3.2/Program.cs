@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Func func = Sub;
-            Console.WriteLine($"10 - 5 = {Sub(5,10)}");
+            Console.WriteLine($"10 - 5 = {func(5,10)}");
             Console.ReadLine();
         }
 
