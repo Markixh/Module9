@@ -6,10 +6,7 @@
 
         static void Main(string[] args)
         {
-            ShowMessageDelegate showMessageDelegate = delegate (string _message)
-            {
-                Console.WriteLine(_message);
-            };
+            ShowMessageDelegate showMessageDelegate = (_message) => Console.WriteLine(_message);
             showMessageDelegate.Invoke("Hello World!");
             Console.Read();
         }
