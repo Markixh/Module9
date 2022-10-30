@@ -5,7 +5,13 @@
         static void Main(string[] args)
         {
             Func func = Sub;
+
+            Console.WriteLine("ПЕРВЫЙ СПОСОБ ВЫЗОВА ДЕЛЕГАТА");
             Console.WriteLine($"10 - 5 = {func(5,10)}");
+
+            Console.WriteLine("ВТОРОЙ СПОСОБ ВЫЗОВА ДЕЛЕГАТА");
+            Console.WriteLine($"10 - 5 = {func.Invoke(5, 10)}");
+
             Console.ReadLine();
         }
 
