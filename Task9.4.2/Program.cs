@@ -13,7 +13,7 @@
             Console.ReadLine();
         }
 
-        static Car BuildLexus(string model)
+        static Lexus BuildLexus(string model)
         {
             return new Lexus();
         }
